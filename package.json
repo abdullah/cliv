@@ -1,6 +1,6 @@
 {
   "name": "cliv",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "Creater component for vue.js",
   "main": "index.js",
   "scripts": {

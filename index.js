@@ -1,17 +1,18 @@
 'use strict';
 
+const process = require('process');
+
 const program 	= require('commander');
 const path 		= require('path');
-const _PWD 		= process.env.PWD;
-const _PCK_JSON = path.join(_PWD ,'package.json');
-console.log(_PCK_JSON)
+const cwd 		= process.cwd();
+const _PCK_JSON = path.join(cwd ,'/package.json');
 const app 		= require(_PCK_JSON);
 const fs 		= require('fs');
 const colors 	= require('colors');
 
 
-const template = fs.readFileSync(path.join('./template.vue'), { encoding: 'utf-8' });
-const _path = app.cliv_path ? path.join(_PWD,app.cliv_path) : path.join(_PWD,"app/components");
+const template = fs.readFileSync(path.join(__dirname,'template.vue'), { encoding: 'utf-8' });
+const _path = app.cliv_path ? path.join(cwd,app.cliv_path) : path.join(cwd,"/src/components");
 
 
 program
@@ -22,9 +23,9 @@ program
 
  if (program.args.length) {
  	program.args.map(function(index, elem) {
-		var file = path.join(_path,index+'.vue');
+		const file = path.join(_path,index+'.vue');
 		fs.writeFile(file,template,function (e) {
-			if (e) console.log("Oh no !")
+			if (e) console.log("Oh no !",e)
 			console.log("Success",file.green);	
 		})
  	})
