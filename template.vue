@@ -14,10 +14,22 @@
     components: {
 
     },
-    ready() {
+    beforeCreate() {
 
     },
-    destroy() {
+    created() {
+
+    },
+    beforeMount() {
+
+    },
+    mounted() {
+
+    },
+    beforeDestroy() {
+
+    },
+    destroyed() {
 
     },
     methods:{
