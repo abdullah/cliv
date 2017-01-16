@@ -1,4 +1,4 @@
-# CLİV
+# CLIV
 
 CLIV simple component creator for vue.js from terminal. 
 
@@ -13,7 +13,7 @@ CLIV simple component creator for vue.js from terminal.
     // Success ...root/App.vue
     //Done!
 
-###Configuraiton
+###Configuration
 
 Our need only one key for component dir ,  use the package.json. For example ;
 #####package.json
