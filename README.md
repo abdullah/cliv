@@ -9,12 +9,13 @@ CLIV simple component creator for vue.js from terminal.
 
 ###Use
 
-    cliv -c myComponentName -f src/components/myFolder
+    cliv -c myComponentName -f src/components/myFolder 
     
     //✓ myComponentName.vue
     
 
-###Configuration
+###Options
+
 ```bash
 
     Usage: cliv [componentNames]
@@ -25,6 +26,7 @@ CLIV simple component creator for vue.js from terminal.
     -V, --version     output the version number
     -c, --components  Components name
     -f, --folder      Folder name
+    -s, --super       Super template
 
 ```
 
