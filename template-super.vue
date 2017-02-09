@@ -1,6 +1,6 @@
 <template>
-  <div class="template">
-  </div>
+  <section class="%cmpname%">
+  </section>
 </template>
 
 <script>
