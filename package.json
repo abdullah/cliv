@@ -1,6 +1,6 @@
 {
   "name": "cliv",
-  "version": "1.0.3",
+  "version": "1.0.5",
   "description": "Creater component for vue.js",
   "main": "index.js",
   "scripts": {
@@ -28,6 +28,7 @@
   "homepage": "https://github.com/iltegin/cliv#readme",
   "dependencies": {
     "colors": "^1.1.2",
-    "commander": "^2.9.0"
+    "commander": "^2.9.0",
+    "shelljs": "^0.7.6"
   }
 }
