@@ -9,7 +9,7 @@ var shell = require('shelljs');
 
 
 program
-  .version('1.0.6')
+  .version('1.0.7')
   .usage('[componentNames]')
   .option('-c, --components', 'Components name')
   .option('-f, --folder', 'Folder name')
