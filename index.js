@@ -28,7 +28,7 @@ var optionDefinitions = [
 
 var options = commandLineArgs(optionDefinitions)
 
-console.log(options)
+
 if (options.components && options.components.length) {
   createComponent()
 } else {
