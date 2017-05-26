@@ -1,7 +1,3 @@
-<template>
-  <section class="%cmpname%">
-  </section>
-</template>
 
 <script>
 export default {
@@ -37,6 +33,11 @@ export default {
   }
 }
 </script>
+
+<template>
+  <section class="%cmpname%">
+  </section>
+</template>
 
 <style>
 

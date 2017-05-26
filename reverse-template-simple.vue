@@ -1,7 +1,3 @@
-<template>
-  <div class="%cmpname%">
-  </div>
-</template>
 
 <script>
 export default {
@@ -15,6 +11,11 @@ export default {
   computed: {},
 }
 </script>
+
+<template>
+  <div class="%cmpname%">
+  </div>
+</template>
 
 <style>
 

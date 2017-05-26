@@ -1,35 +1,46 @@
 # CLIV
 
-CLIV simple component creator for vue.js from terminal. 
+CLIV simple component creator for vue.js from terminal.
 
 
 ### Install
 
-    npm i -g cliv
+`npm i -g cliv`
 
-###Use
 
-    cliv -c myComponentName -f src/components/myFolder 
-    
-    //✓ myComponentName.vue
-    
-
-###Options
+#### Use
 
 ```bash
+  cliv -c myComponentName -f src/components/myFolder
+  src/components/myFolder/myComponentName.vue ✓
+ ```
 
-    Usage: cliv [componentNames]
+If you need a reverse template like; `script`, `template`, `style` order? You can use -r  option.
 
-    Options:
-
-    -h, --help        output usage information
-    -V, --version     output the version number
-    -c, --components  Components name
-    -f, --folder      Folder name
-    -s, --super       Super template
+```bash
+  cliv -c myComponentName -f src/components/myFolder -r
+  src/components/myFolder/myComponentName.vue ✓
 
 ```
 
-####If you try to create an existing file it will give you an error message from cliv    
+### Options
+
+```bash
+
+  Usage: cliv [componentNames]
+
+  Options:
+
+  -h, --help        output usage information
+  -V, --version     output the version number
+  -c, --components  Components name
+  -f, --folder      Folder name
+  -s, --super       Super template
+  -r, --reverse     Reverse field order in template
+
+```
+
+If you try to create an existing file it will give you an error message from cliv
 
 `-f` by default **src/components**
+
